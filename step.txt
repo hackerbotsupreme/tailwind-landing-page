@@ -1,0 +1,16 @@
+step and guide
+ ​
+why we need tailwind as a plugin/postcss ?
+Use it to add more opinionated, complex classes like buttons, form controls, alerts, etc; the sort of pre-built components you often see in other frameworks that you might need to override with utility classes.
+
+steps 
+PS C:\Users\rekha\OneDrive\Desktop\css.tailwind\0.2.tailwind postcss setup as plugin>  mkdir tailwind-css-postcss
+
+    Directory: C:\Users\rekha\OneDrive\Desktop\css.tailwind\0.2.tailwind postcss setup as plugin
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          04-05-2023    08:36                tailwind-css-postcss
+
+PS C:\Users\rekha\OneDrive\Desktop\css.tailwind\0.2.tailwind postcss setup as plugin> cd tailwind-css-postcss
+PS C:\Users\rekha\OneDrive\Desktop\css.tailwind\0.2.tailwind postcss setup as plugin\tailwind-css-postcss> code .

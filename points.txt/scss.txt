@@ -1,0 +1,105 @@
+Difference Between CSS and SCSS
+Over the past few years, developers have always preferred CSS as their first choice in the process of web creation and development. However, the influence of SASS (Syntactically Awesome Style Sheets) in the market reduced the overall use of CSS significantly among all. There is an advanced version of SASS known as the SCSS- deployed widely in place of CSS these days. We will look into the difference between CSS and SCSS in this article in a tabular form. But before comparing them both, let us understand a bit more about each of them. Read ahead to know more.
+
+What is CSS?
+CSS is an acronym for Cascading Style Sheet. It is a type of scripting language that we can use for developing and creating various web pages. CSS language also helps a developer in styling web pages and making them overall more appealing and attractive. Widely used with JavaScript and HTML, CSS turns out to be the most popular technology for the web. It has an extension named .css.
+
+CSS had its first proposal by Håkon Wium Lie on October 10th, 1994. It had its first W3C recommendation issues back in 1996, known as the CSS1. This language aims at allowing separation of the available content from its presentation, such as layout, fonts, colors used, etc. Due to the separated content and presentation- the usability of content improves. Also, as a result, we get more flexibility in controlling the specifications of a presentation. CSS allows multiple web pages to share their formatting. It does so by specifying every associated CSS in a separate file (.css), minimizing duplication and overall complexity in the context of a structure.
+
+What is SCSS?
+The term SCSS is an acronym for Sassy Cascading Style Sheets. It is basically a more advanced and evolved variant of the CSS language. Natalie Weizenbaum and Chris Eppstein created it, and Hampton Catlin designed it. It comes with more advanced features- thus often called Sassy CSS. This language is a preprocessor one, and we need to compile or interrupt it into the CSS language. The SCSS language comes with a file extension, namely .scss.
+
+SCSS assists a user in adding various extra features to the CSS, such as nesting, variables, etc. These extra features make the process of writing the SCSS language quicker and easier as compared to that of writing the standard language of CSS. The SCSS language may make use of the CSS function and code. The SCSS stays totally compliant with the syntax of CSS- and it also supports the full power of the SASS.
+
+Difference Between CSS and SCSS
+Parameters	CSS	SCSS
+Meaning and Definition	It is a scripting language- used for developing various web pages.	It is a more evolved and advanced version of the CSS language. It is a preprocessor type of language, and we need to compile or interrupt it into the CSS language.
+Lines of Codes	CSS makes extensive use of lines of codes.	SCSS makes use of comparatively fewer lines in its codes.
+Functions	CSS consists of various common features, and thus, it can perform some basic functions.	SCSS consists of more advanced features, and thus, it can perform more advanced functions.
+Rules for Nesting	A regular CSS language does not assign various nested rules.	The SCSS language promotes rules that are properly nested.
+Design	CSS is a styling language that lets users create, design, and style various web pages.	SCSS is a special file type in a SASS program that one needs to write in the Ruby language.
+Languages Used	We generally use CSS in the JavaScript and HTML languages.	We generally use the SCSS in the Ruby language.
+
+////////////////////////////////////////////////
+
+What's the difference between SCSS and Sass?
+
+From what I've been reading, Sass is a language that makes CSS more powerful with variable and math support.
+
+What's the difference with SCSS? Is it supposed to be the same language? Similar? Different?
+////////////////////////////////////////////////
+
+What is the difference between CSS and SCSS?
+
+source 
+https://stackoverflow.com/questions/46400443/what-is-the-difference-between-css-and-scss
+
+
+
+CSS
+In CSS we write code as depicted bellow, in full length.
+
+body{
+ width: 800px;
+ color: #ffffff;
+}
+body content{
+ width:750px;
+ background:#ffffff;
+}
+SCSS
+In SCSS we can shorten this code using a @mixin so we don’t have to write color and width properties again and again. We can define this through a function, similarly to PHP or other languages.
+
+$color: #ffffff;
+$width: 800px;
+
+@mixin body{
+ width: $width;
+ color: $color;
+
+ content{
+  width: $width;
+  background:$color;
+ }
+}
+SASS
+In SASS however, the whole structure is visually quicker and cleaner than SCSS.
+
+It is sensitive to white space when you are using copy and paste,
+It seems that it doesn't support inline CSS currently.
+
+$color: #ffffff
+$width: 800px
+$stack: Helvetica, sans-serif
+
+body
+  width: $width
+  color: $color
+  font: 100% $stack
+
+  content
+    width: $width
+    background:$color
+
+
+73
+
+CSS is the styling language that any browser understands to style webpages.
+
+SCSS is a special type of file for SASS, a program written in Ruby that assembles CSS style sheets for a browser, and for information, SASS adds lots of additional functionality to CSS like variables, nesting and more which can make writing CSS easier and faster.
+SCSS files are processed by the server running a web app to output a traditional CSS that your browser can understand.
+
+
+css has variables as well. You can use them like this:
+
+--primaryColor: #ffffff;
+--width: 800px;
+
+body {
+    width: var(--width);
+    color: var(--primaryColor);
+}
+.content{
+    width: var(--width);
+    background: var(--primaryColor);
+}
